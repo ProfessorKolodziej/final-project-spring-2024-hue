@@ -5,10 +5,12 @@ Try changing the color from blue to red in the
 primary color variable below.
 */
 
+/*
 :root {
 	--color-primary: blue;
 	--color-secondary: #c00;
 }
+*/
 
 /*
 CSS doesn't allow variables to be used in media
@@ -22,14 +24,380 @@ to help you out.
 	--size-xl: 1200px;
 */
 
+/*
 h1 {
 	color: var(--color-primary);
 }
+*/
 
-/* This uses the same value as --size-xs. */
+/* This uses the same value as --size-xs.
 @media screen and (width >= 320px) {
 	.content-container {
 		margin: 0 auto;
 		max-width: 768px;
 	}
+}
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica', cursive;
+	box-sizing: border-box;
+}
+
+
+body{
+	background: #E5E0DA;
+	color: #40291C;
+    background-image: url(images/newbackground.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*
+.header-text{
+	margin-top: 20%;
+	font-size: 30px;
+}
+*/
+
+/*
+#header{
+	background: #E5E0DA;
+	color: #40291C;
+	width: 100%;
+	height: 100vh;
+	background-image: url(images/newbackground.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+*/
+
+.header-text h1{
+	font-size: 180px;
+	margin-top: 18%;
+	text-align: center;
+	font-family: 'Brush Script MT', cursive;
+	font-weight: 100;
+}
+
+.header-text p{
+	font-size: 20px;
+	text-align: center;
+}
+
+.header-text a{
+    font-size: 180px;
+	margin-top: 18%;
+	text-align: center;
+	color: #40291C;
+	font-family: 'Brush Script MT', cursive;
+    font-weight: 100;
+	text-decoration: none;
+}
+
+.header-red {
+    max-width: 40%; /* Set a maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+.header-red h1 {
+    font-size: 180px;
+    margin-top: 40%;
+    color: black;
+    background-color: #FF2828;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 100;
+}
+.header-red p{
+	font-size: 20px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.header-orange {
+    max-width: 40%; /* Set a maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+.header-orange h1 {
+    font-size: 180px;
+    margin-top: 40%;
+    color: black;
+    background-color: #FF6D24;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 100;
+}
+.header-orange p{
+	font-size: 20px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.header-yellow {
+    max-width: 40%; /* Set a maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+.header-yellow h1 {
+    font-size: 180px;
+    margin-top: 40%;
+    color: black;
+    background-color: #F0B600;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 100;
+}
+.header-yellow p{
+	font-size: 20px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.header-green {
+    max-width: 40%; /* Set a maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+.header-green h1 {
+    font-size: 180px;
+    margin-top: 40%;
+    color: black;
+    background-color: #65B502;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 100;
+}
+.header-green p{
+	font-size: 20px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.header-blue {
+    max-width: 40%; /* Set a maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+.header-blue h1 {
+    font-size: 180px;
+    margin-top: 40%;
+    color: black;
+    background-color: #087DDF;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 100;
+}
+.header-blue p{
+	font-size: 20px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.header-purple {
+    max-width: 40%; /* Set a maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+.header-purple h1 {
+    font-size: 180px;
+    margin-top: 40%;
+    color: black;
+    background-color: #C957D9;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 100;
+}
+.header-purple p{
+	font-size: 20px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.header-white {
+    max-width: 40%; /* Set a maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+.header-white h1 {
+    font-size: 180px;
+    margin-top: 40%;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 100;
+}
+.header-white p{
+	font-size: 20px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+/*
+.header-text h1{
+	font-size: 180px;
+	margin-top: 18%;
+	text-align: center;
+	font-family: 'Brush Script MT', cursive;
+	font-weight: 100;
+}
+
+.header-text p{
+	font-size: 20px;
+	text-align: center;
+}
+
+.header-text a{
+    font-size: 180px;
+	margin-top: 18%;
+	text-align: center;
+	color: #40291C;
+	font-family: 'Brush Script MT', cursive;
+    font-weight: 100;
+	text-decoration: none;
+}
+*/
+
+.header-black {
+    max-width: 40%; /* Set a maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+.header-black h1 {
+    font-size: 180px;
+    margin-top: 40%;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 100;
+}
+.header-black p{
+	font-size: 20px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+
+a:hover {
+    text-decoration: none; 
+}
+
+.back a{
+	font-size: 25px;
+	margin-left: 3%;
+	margin-top: 20%;
+	color: #40291C;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/*
+.button-group{
+	display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+.button {
+	border: none;
+	color: black;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 50;
+	font-size: 20px;
+	margin: 10px 10px;
+  }
+*/
+
+.button-group {
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto; /* Updated margin for center alignment */
+	margin-top: 15%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 560px; /* Adjust max-width to fit 4 buttons in a row */
+}
+
+.button {
+    border: none;
+    color: black;
+    width: calc(25% - 20px); /* Set width for each button to fit 4 buttons in a row */
+    height: 120px;
+    display: flex; /* Change display to flex */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center align content vertically */
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50;
+    font-size: 20px;
+    margin: 10px; /* Adjust margin to create space between buttons */
+    text-align: center; /* Center align text */
+}
+
+/* Additional styles for individual buttons */
+.button1 {
+    border-radius: 50%;
+    background-color: #FF2828;
+}
+
+.button2 {
+    border-radius: 50%;
+    background-color: #FF6D24;
+}
+
+.button3 {
+    border-radius: 50%;
+    background-color: #F0B600;
+}
+
+.button4 {
+    border-radius: 50%;
+    background-color: #65B502;
+}
+
+.button5 {
+    border-radius: 50%;
+    background-color: #087DDF;
+}
+
+.button6 {
+    border-radius: 50%;
+    background-color: #C957D9;
+}
+
+.button7 {
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
+.button8 {
+    border-radius: 50%;
+    background-color: #000000;
+    color: white;
 }
